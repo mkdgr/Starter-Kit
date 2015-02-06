@@ -1,0 +1,43 @@
+@import "bootstrap";
+
+//////////////////////////////////////////
+// GLOBAL ///////////////////////////////
+/////////////////////////////////////////
+body, input, textarea, select, button {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga", "kern";
+    -webkit-font-feature-settings: "liga", "kern";
+    -moz-font-feature-settings: "liga", "kern";
+    font-kerning: normal;
+    -webkit-font-kerning: normal;
+    -moz-font-kerning: normal;
+    -webkit-backface-visibility: hidden;
+}
+
+p {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+section {
+    @extend .container;
+}
+
+article {
+    @include make-row;
+}
